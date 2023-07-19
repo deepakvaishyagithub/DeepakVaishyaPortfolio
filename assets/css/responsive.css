@@ -43,10 +43,11 @@
     font-size: 2.5rem;
   }
   header .header-main-box .header-data .header-splash-image {
-    width: 60%;
+    width: 60vw;
+    height: auto;
   }
   header .header-main-box .header-data .header-pic-image {
-    width: 45%;
+    width: 45vw;
   }
   .aboutmeSec .aboutme-box .image {
     width: 30%;
@@ -97,12 +98,11 @@
     font-size: 2rem;
   }
   header .header-main-box .header-data .header-splash-image {
-    width: 65%;
-    height: auto;
+    width: 65vw;
     bottom: -50px;
   }
   header .header-main-box .header-data .header-pic-image {
-    width: 56%;
+    width: 56vw;
     bottom: 0px;
   }
   .aboutmeSec .aboutme-box {
@@ -137,6 +137,23 @@
   }
   .skillsSec .skill .skill-content .skill-image img {
     transform: translateX(0px);
+  }
+}
+@media screen and (max-width: 550px) {
+  footer .footer .contact-data {
+    display: block;
+  }
+  footer .footer .contact-data .contact-form,
+  footer .footer .contact-data .contact-content {
+    width: 90%;
+    margin: auto;
+  }
+  footer .footer .contact-data .contact-form {
+    margin-top: 3rem;
+  }
+  .heading {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
   }
 }
 @media screen and (max-width: 453px) {
@@ -184,10 +201,10 @@
     line-height: 22px;
   }
   header .header-main-box .header-data .header-splash-image {
-    width: 84%;
+    width: 84vw;
   }
   header .header-main-box .header-data .header-pic-image {
-    width: 66%;
+    width: 66vw;
   }
   .aboutmeSec .aboutme-box {
     display: block;
@@ -206,17 +223,6 @@
     width: 90%;
     margin: auto;
     margin-bottom: 2rem;
-  }
-  footer .footer .contact-data {
-    display: block;
-  }
-  footer .footer .contact-data .contact-form,
-  footer .footer .contact-data .contact-content {
-    width: 90%;
-    margin: auto;
-  }
-  footer .footer .contact-data .contact-form {
-    margin-top: 3rem;
   }
   .heading {
     font-size: 2rem;
@@ -241,15 +247,6 @@
   }
 }
 @media screen and (max-width: 375px) {
-  header .nameBox {
-    padding-left: 1rem;
-  }
-  .heading {
-    font-size: 1.7rem;
-    letter-spacing: 1px;
-  }
-}
-@media screen and (max-width: 375px) {
   .container-xl {
     padding: 0px;
   }
@@ -262,9 +259,5 @@
   .skillsSec .skill .skill-content .skill-data .skill-box {
     width: 75px;
     height: 75px;
-  }
-  .heading {
-    font-size: 1.7rem;
-    letter-spacing: 1px;
   }
 }/*# sourceMappingURL=responsive.css.map */
