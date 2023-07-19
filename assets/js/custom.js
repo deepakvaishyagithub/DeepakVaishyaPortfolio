@@ -7,6 +7,7 @@ AOS.init({
 let ProjectImage = '';
 
 $(document).ready(() =>{
+  $('#wth').text(window.innerWidth);
   setTimeout(()=>{
     closeWelcomeAnimation();
   }, 2500);
