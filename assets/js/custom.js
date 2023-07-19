@@ -9,7 +9,7 @@ let ProjectImage = '';
 
 $(document).ready(() =>{
 
-  // $('#wth').text(window.innerWidth);
+   $('#wth').text(window.innerWidth);
 
   setTimeout(()=>{
     closeWelcomeAnimation();
