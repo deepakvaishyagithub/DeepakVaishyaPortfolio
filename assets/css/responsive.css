@@ -55,10 +55,10 @@
     width: 100%;
   }
   .aboutmeSec .aboutme-box .aboutme-content {
+    width: 70%;
     margin-left: -3.2rem;
     margin-bottom: 0.5rem;
     padding: 2rem 1.5rem;
-    width: 70%;
   }
   .aboutmeSec .aboutme-box .aboutme-content .about-data article p {
     font-size: 0.9rem;
@@ -85,6 +85,65 @@
     100% {
       top: -70px;
     }
+  }
+}
+@media screen and (max-width: 600px) {
+  header .header-main-box .header-data .header-content .quote-line {
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 0.4rem;
+  }
+  header .header-main-box .header-data .header-content .quote-line span {
+    font-size: 2rem;
+  }
+  header .header-main-box .header-data .header-splash-image {
+    width: 65%;
+    height: auto;
+    bottom: -50px;
+  }
+  header .header-main-box .header-data .header-pic-image {
+    width: 56%;
+    bottom: 0px;
+  }
+  .aboutmeSec .aboutme-box {
+    display: block;
+  }
+  .aboutmeSec .aboutme-box .image {
+    width: 90%;
+  }
+  .aboutmeSec .aboutme-box .image .bigabout {
+    display: none;
+  }
+  .aboutmeSec .aboutme-box .image .mobabout {
+    display: block;
+  }
+  .aboutmeSec .aboutme-box .aboutme-content {
+    width: 90%;
+    margin: auto;
+  }
+  .aboutmeSec .aboutme-box .aboutme-content .about-data article p {
+    font-size: 0.9rem;
+  }
+  .skillsSec .skill .skill-content {
+    display: block;
+  }
+  .skillsSec .skill .skill-content .skill-data,
+  .skillsSec .skill .skill-content .skill-image {
+    width: 95%;
+    margin: auto;
+  }
+  .skillsSec .skill .skill-content .skill-image {
+    margin-top: 2rem;
+  }
+  .skillsSec .skill .skill-content .skill-image img {
+    transform: translateX(0px);
+  }
+}
+@media screen and (max-width: 453px) {
+  .skillsSec .skill .skill-content .skill-data .skill-box {
+    width: 110px;
+    height: 110px;
+    padding: 0px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -119,25 +178,16 @@
   }
   header .header-main-box .header-data .header-content .quote-line {
     width: 100%;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-top: 0.4rem;
     padding-left: 2rem;
   }
   header .header-main-box .header-data .header-content .quote-line article {
     line-height: 22px;
   }
-  header .header-main-box .header-data .header-content .quote-line span {
-    font-size: 2rem;
-  }
   header .header-main-box .header-data .header-splash-image {
     width: 84%;
-    height: auto;
-    bottom: -50px;
   }
   header .header-main-box .header-data .header-pic-image {
     width: 66%;
-    bottom: 0px;
   }
   .aboutmeSec .aboutme-box {
     display: block;
@@ -149,9 +199,6 @@
     width: 100%;
     margin: 0px;
   }
-  .aboutmeSec .aboutme-box .aboutme-content .about-data article p {
-    font-size: 0.9rem;
-  }
   .aboutmeSec .aboutme-box .aboutme-content .experience {
     display: block;
   }
@@ -159,22 +206,6 @@
     width: 90%;
     margin: auto;
     margin-bottom: 2rem;
-  }
-  .skillsSec .skill .skill-content {
-    display: block;
-  }
-  .skillsSec .skill .skill-content .skill-data,
-  .skillsSec .skill .skill-content .skill-image {
-    width: 95%;
-    margin: auto;
-  }
-  .skillsSec .skill .skill-content .skill-image img {
-    transform: translateX(0px);
-  }
-  .skillsSec .skill .skill-content .skill-data .skill-box {
-    width: 110px;
-    height: 110px;
-    padding: 0px;
   }
   footer .footer .contact-data {
     display: block;
@@ -196,10 +227,7 @@
     }
   }
 }
-@media screen and (max-width: 375px) {
-  header .nameBox {
-    padding-left: 1rem;
-  }
+@media screen and (max-width: 421px) {
   .skillsSec .skill .skill-content .skill-data .skill-box {
     width: 80px;
     height: 80px;
@@ -210,6 +238,11 @@
   }
   .skillsSec .skill .skill-content .skill-data .skill-box .skill-back h4 {
     font-size: 1rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  header .nameBox {
+    padding-left: 1rem;
   }
   .heading {
     font-size: 1.7rem;

@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&display=swap');
+@import url('../icon/bootstrapicon/bootstrap-icons.min.css');
+
+@font-face {
+    font-family: DM-sans-Medium;
+    src: url(../font/DM_Sans/DMSans-Medium.ttf);
+  }
+@font-face {
+    font-family: DM-sans-Normal;
+    src: url(../font/DM_Sans/DMSans-Regular.ttf);
+  }
+@font-face {
+    font-family: DM-sans-Bold;
+    src: url(../font/DM_Sans/DMSans-Bold.ttf);
+  }
+
+@import "SCSS/variable";
+@import "SCSS/fun";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: DM-sans-Normal;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+html,
+body{
+    overflow-x: hidden;
+}
+.fontFamily-DM-sans-Medium{
+    font-family: DM-sans-Medium;
+}
+.fontFamily-DM-sans-Bold{
+    font-family: DM-sans-Bold;
+}
+
+// button{
+//     font-family: DM-sans-Medium !important;
+// }
+
+.width-40per{
+    width: 40%;
+}
+.width-60per{
+    width: 60%;
+}
+.width-30px{
+    width: 30px;
+}
+.pad-x-3rem{
+    padding: 3rem 0px;
+}
+.pad-x-2rem{
+    padding: 2rem 0px;
+}
+.display-flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+.heading{
+    display: inline-block;
+    font-size: 3.3rem;
+    font-weight: normal;
+    letter-spacing: 5px;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    &::after,
+    &::before{
+        content: '';
+        position: absolute;
+        width: 30%;
+        height: 60%;
+        border-width: 2px;
+        border-style: solid;
+    }
+    &::after{
+        bottom: -5px;
+        right: -10px;
+        z-index: -1;
+    }
+    &::before{
+        top: -5px;
+        left: -25px;
+        z-index: -1;
+    }
+}
+*/
+// <!-- ********************* Back To Top Button CSS *********************** -->
+.top-button-box{
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    padding-left: .4rem;
+    border: 2px solid $secondry;
+    border-radius: 50%;
+    transition: background-color ease-in-out .2s;
+    cursor: pointer;
+    i{
+        font-size: 2rem;
+        color: $secondry;
+    }
+    &:hover{
+        background-color: $secondry;
+        i{
+            color: $light;
+        }
+    }
+}
+
+.heading{
+    display: inline-block;
+    font-size: 3.3rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    &::after,
+    &::before{
+        content: '';
+        position: absolute;
+        width: 30%;
+        height: 60%;
+        border-width: 2px;
+        border-style: solid;
+    }
+    &::after{
+        bottom: -5px;
+        right: -10px;
+        z-index: -1;
+    }
+    &::before{
+        top: -5px;
+        left: -25px;
+        z-index: -1;
+    }
+}
+
+.image-zoomout{
+    width: 15%;
+    cursor: zoom-in;
+}
+.image-zoomin{
+    width: 100%;
+    cursor: zoom-out;
+}
+
+@import "SCSS/home";
+
+
+
+// ****************************** Animation Frames
+@keyframes typing{
+    100%{
+        left: calc(100% + 25px);
+    }
+}
+@keyframes slide{
+    100%{
+        top: -105px;
+    }
+}
+@keyframes moveDown{
+    0%{
+        bottom: 25px;
+    }
+    50%{
+        bottom: 10px;
+    }
+    100%{
+        bottom: 25px;
+    }
+}

@@ -344,8 +344,14 @@ header .header-main-box .header-data {
 header .header-main-box .header-data .header-content {
   padding: 1rem 2rem;
 }
+header .header-main-box .header-data .header-content h1 {
+  margin: 0px;
+}
 header .header-main-box .header-data .header-content .headertextdata {
   display: flex;
+}
+header .header-main-box .header-data .header-content .headertextdata h1 {
+  margin: 0px;
 }
 header .header-main-box .header-data .header-content .headertextdata ul {
   list-style: none;
@@ -453,6 +459,9 @@ header .down-arrow .down-arrow2 {
 }
 .aboutmeSec .aboutme-box .image {
   z-index: 1;
+}
+.aboutmeSec .aboutme-box .image .mobabout {
+  display: none;
 }
 .aboutmeSec .aboutme-box .aboutme-content {
   background-color: #6222cc;

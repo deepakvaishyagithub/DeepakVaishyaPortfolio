@@ -1,3 +1,4 @@
+
 AOS.init({
   offset: 300,
   duration: 600
@@ -7,7 +8,13 @@ AOS.init({
 let ProjectImage = '';
 
 $(document).ready(() =>{
+<<<<<<< Updated upstream
   $('#wth').text(window.innerWidth);
+=======
+
+
+
+>>>>>>> Stashed changes
   setTimeout(()=>{
     closeWelcomeAnimation();
   }, 2500);
@@ -41,6 +48,7 @@ function closeWelcomeAnimation(){
 }
 
 function fullProjectImage(projectimageid){
+  $(".project-data").removeAttr("data-aos");
   ProjectImage = projectimageid;
   if($('.project-full-image-layer').hasClass("animate__zoomOut")){
     $('.project-full-image-layer').removeClass('animate__zoomOut');
@@ -60,5 +68,6 @@ function closeImage(){
       setTimeout(()=>{
         $('.project-full-image-layer').css("display", "none");
         $('body').css("overflow", "auto");
+        $(".project-data").attr("data-aos", "zoom-out-down");
       }, 100);
 }
