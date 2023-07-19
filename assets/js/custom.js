@@ -8,13 +8,9 @@ AOS.init({
 let ProjectImage = '';
 
 $(document).ready(() =>{
-<<<<<<< Updated upstream
-  $('#wth').text(window.innerWidth);
-=======
 
+  // $('#wth').text(window.innerWidth);
 
-
->>>>>>> Stashed changes
   setTimeout(()=>{
     closeWelcomeAnimation();
   }, 2500);
