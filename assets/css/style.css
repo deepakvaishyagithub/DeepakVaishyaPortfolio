@@ -663,7 +663,7 @@ header .down-arrow .down-arrow2 {
 }
 .projectSec .project .project-data .project-card-box .project-card-content .project-full-image-layer .project-full-image-box .project-icon {
   position: absolute;
-  right: 0px;
+  left: 0px;
   top: 0px;
   width: 50px;
   font-size: 2rem;

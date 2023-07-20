@@ -9,7 +9,7 @@ let ProjectImage = '';
 
 $(document).ready(() =>{
 
-   //$('#wth').text(window.innerWidth);
+  // $('#wth').text(window.innerWidth);
 
   setTimeout(()=>{
     closeWelcomeAnimation();
@@ -50,7 +50,9 @@ function fullProjectImage(projectimageid){
     $('.project-full-image-layer').removeClass('animate__zoomOut');
     $('.project-full-image-layer').addClass('animate__zoomIn');
   }
+  debugger;
   $('body').css("overflow", "hidden");
+  $('html').css("overflow", "hidden");
   $('#'+projectimageid).css("display", "block");
   if($('.fullimage').hasClass("image-zoomin")){
     $('.fullimage').removeClass('image-zoomin');
@@ -63,7 +65,8 @@ function closeImage(){
       $('.project-full-image-layer').addClass('animate__zoomOut');
       setTimeout(()=>{
         $('.project-full-image-layer').css("display", "none");
-        $('body').css("overflow", "auto");
+        $('body').css("overflow-y", "auto");
+        $('html').css("overflow", "auto");
         $(".project-data").attr("data-aos", "zoom-out-down");
       }, 100);
 }
